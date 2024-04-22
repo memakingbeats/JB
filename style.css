@@ -245,7 +245,7 @@ html {
     width: 100vw;
     height: 500px;
     overflow: hidden;
-    margin-top: 25rem;
+    margin-top: 15rem;
 }
 
 .full-width-image {
@@ -331,8 +331,8 @@ footer {
         align-items: center;
         background-color: #0099ff36;
     }
-    .full-width-container {
-        margin-top: 15rem;
+    .full-width-container2 {
+        margin-top: 25rem;
     }
 
     .product img {
