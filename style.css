@@ -94,9 +94,9 @@ html {
 }
 .navbar img {
     width: 260px;
-    height: 260px;
+    height: auto;
     text-align: center;
-    margin-top: 15rem; /* Adjust the margin as needed */
+    margin-top: 12rem; /* Adjust the margin as needed */
 }
 
 .navbar .fa-solid {
@@ -158,7 +158,7 @@ html {
 
 .container .row .img2 {
     width: 500px;
-    margin-top: -80px;
+
     margin-bottom: -80px;
     margin-top: 1rem;
 }
@@ -219,7 +219,7 @@ html {
     margin-top: 0rem;
     width: 400px;
     margin-bottom: 15rem;
-    margin-left: 0rem;
+    margin-left: 10rem;
 }
 
 #glass3.active,
@@ -322,10 +322,6 @@ footer {
 }
 
 @media (max-width: 576px) {
-    .logo-small {
-        font-size: 1.5rem;
-    }
-
     .container .sobre {
         width: 100%;
         margin-left: 0.2rem;
@@ -333,12 +329,20 @@ footer {
     .navbar-nav {
         display: flex;
         align-items: center;
-        background-color: #0099ff;
+        background-color: #0099ff36;
+    }
+    .full-width-container {
+        margin-top: 15rem;
+    }
+
+    .product img {
+        margin-left: 0rem;
     }
 
     .navbar img {
-        width: 300px;
-        height: 200px;
+        width: 100%;
+        height: auto;
+        text-align: center;
     }
 
     .navbar-collapse .navbar-nav .nav-link {
@@ -354,7 +358,7 @@ footer {
     }
 
     .header-image-container {
-        height: 32rem;
+        height: 12rem;
     }
     .header-image-container .text-overlay h1 {
         font-size: 45px;
@@ -362,11 +366,6 @@ footer {
         margin-top: 18rem;
     }
 
-    .logo {
-        width: 6rem; /* Adjust width as per requirement */
-        height: 6rem;
-        margin: 2rem 2rem 0 2rem;
-    }
     .carousel-inner {
         margin-top: -15rem;
     }
@@ -384,18 +383,21 @@ footer {
     .container .row .par1 {
         font-size: 18px;
         margin-top: 50px;
+        letter-spacing: 15px;
     }
     .container .row .par2 {
         font-size: 20px;
         margin-top: 50px;
         margin-left: 0;
         margin-bottom: 0;
+        letter-spacing: 15px;
     }
     .container .row .par3 {
         font-size: 20px;
         margin-top: 10px;
-        margin-left: 0;
+        margin-left: 13px;
         font-weight: 300;
+        letter-spacing: 15px;
     }
     .product .row .parag4 {
         margin-top: 2rem;
@@ -421,6 +423,7 @@ footer {
 
     .column-content img {
         width: 100%;
+        margin-top: 2rem;
     }
     .product .row2 h2 {
         font-size: 20px;
@@ -443,5 +446,8 @@ footer {
     }
     .column-content p {
         letter-spacing: 1px;
+    }
+    .textcenter {
+        font-size: 20px;
     }
 }
