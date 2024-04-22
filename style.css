@@ -218,8 +218,8 @@ html {
 .product img {
     margin-top: 0rem;
     width: 400px;
-    margin-bottom: 5rem;
-    margin-left: 10rem;
+    margin-bottom: 15rem;
+    margin-left: 0rem;
 }
 
 #glass3.active,
@@ -245,7 +245,7 @@ html {
     width: 100vw;
     height: 500px;
     overflow: hidden;
-    margin-top: 15rem;
+    margin-top: 25rem;
 }
 
 .full-width-image {
