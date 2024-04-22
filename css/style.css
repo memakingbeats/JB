@@ -1,0 +1,447 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400; /* Use font-weight 300 for a lighter style */
+    background-color: lightgray;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Container - nav bar */
+.container {
+    position: relative;
+    padding: 0;
+    width: 100%;
+}
+
+/* Add custom CSS to make the navbar transparent */
+.container .navbar {
+    position: relative;
+    width: 100%;
+
+    z-index: 1;
+}
+
+/* Add the following styles to center the logo and align the links */
+.navbar-brand-container {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav li {
+    margin-right: 15px; /* Adjust the margin as needed */
+}
+
+/* Remove the margin-right for the last item in the right-side links */
+.navbar-nav.ml-auto li:last-child {
+    margin-right: 0;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    top: 1.5rem;
+}
+
+.navbar-collapse {
+    position: absolute;
+    top: 20px; /* adjust based on the height of your navbar */
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+.navbar-collapse .navbar-nav .nav-link {
+    font-size: 16px;
+    text-align: center;
+
+    color: rgb(0, 0, 0);
+}
+
+/* Logo on the left */
+.navbar-brand {
+    margin-right: auto; /* pushes everything else to the right */
+}
+
+/* Add this CSS to change the color of nav-link on hover */
+
+.navbar .nav-link {
+    letter-spacing: 5px;
+}
+/* Add this CSS to change the font size and color on hover */
+.navbar-nav .nav-link {
+    transition: transform 0.2s ease, color 0.2s ease; /* Add smooth transitions */
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1); /* Increase font size on hover */
+    color: rgb(
+        146,
+        68,
+        0
+    ) !important; /* Change the color to your desired hover color */
+}
+.navbar img {
+    width: 260px;
+    height: 260px;
+    text-align: center;
+    margin-top: 15rem; /* Adjust the margin as needed */
+}
+
+.navbar .fa-solid {
+    color: black;
+}
+
+.text-overlay {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-weight: 400;
+}
+
+.text-overlay h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 66px; /* You can adjust the font size as needed */
+    letter-spacing: 15px;
+}
+
+.header-image-container {
+    position: relative;
+    width: 100%;
+    height: 40rem; /* Defina a altura desejada */
+    overflow: hidden;
+    margin-top: 20rem;
+}
+
+.header-image2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.logo {
+    width: 8rem; /* Adjust width as per requirement */
+    height: 8rem;
+}
+
+/* SOBRE SECTION */
+
+.container .sobre {
+    background-color: lightgray;
+    margin-top: 0px;
+    padding: 2rem;
+}
+.container .row .img1 {
+    width: 500px;
+
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.container .row .img2 {
+    width: 500px;
+    margin-top: -80px;
+    margin-bottom: -80px;
+    margin-top: 1rem;
+}
+.container .row .par1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    letter-spacing: 20px;
+}
+.container .row .par2 {
+    font-size: 60px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    letter-spacing: 20px;
+    margin-top: 8rem;
+    margin-left: -5rem;
+}
+.container .row .par3 {
+    font-size: 60px;
+    margin-bottom: 70px;
+    font-weight: 400;
+    letter-spacing: 20px;
+    margin-top: -3rem;
+    margin-left: -1rem;
+}
+.container .row .parag1 {
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+}
+.container .row .parag2 {
+    letter-spacing: 2px;
+    margin-bottom: 90px;
+}
+
+/* PRODUCT SECTION */
+
+.product {
+    margin-top: 3rem;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product .row2 h2 {
+    font-size: 20px;
+    color: black;
+    font-weight: 400;
+    letter-spacing: 20px;
+}
+
+.product .row .parag4 {
+    letter-spacing: 2px;
+    text-align: justify;
+    color: black;
+    font-weight: 400;
+}
+
+.product img {
+    margin-top: 0rem;
+    width: 400px;
+    margin-bottom: 5rem;
+    margin-left: 10rem;
+}
+
+#glass3.active,
+#glass4.active,
+#glass5.active,
+#glass6.active {
+    opacity: 1;
+}
+
+/*
+
+
+            .carousel-inner {
+                margin-top: 2px;
+                margin-bottom: 2px;
+            }
+
+            */
+
+/*FOTO LOJA*/
+
+.full-width-container {
+    width: 100vw;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 15rem;
+}
+
+.full-width-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/*FOOTER*/
+footer .contato h4 {
+    letter-spacing: 20px;
+    margin-bottom: 0px;
+    color: black;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 20px;
+}
+footer .contato p {
+    letter-spacing: 3px;
+    margin-bottom: 0px;
+    color: black;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 12px;
+}
+
+footer {
+    background-color: lightgray;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+footer {
+    width: 100%;
+    padding: 20%;
+}
+
+.bg-color-before {
+    background-color: lightgray;
+    height: 50px;
+}
+
+.bg-color-after {
+    background-color: lightgray;
+    padding: 0px;
+    height: 50px;
+}
+
+.icon-spacing {
+    margin-right: 15px; /* Adjust the value as needed */
+}
+
+/* For the last icon, remove the margin to prevent extra space on the right */
+.column-content.fcIcon a:last-child .icon-spacing {
+    margin-right: 0;
+}
+
+.column-content img {
+    width: 100px;
+}
+
+.container-fluid .column-content p {
+    margin-left: 0px;
+    font-size: 10px;
+    color: black;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.email-icon:hover {
+    color: #0099ff;
+}
+
+@media (max-width: 576px) {
+    .logo-small {
+        font-size: 1.5rem;
+    }
+
+    .container .sobre {
+        width: 100%;
+        margin-left: 0.2rem;
+    }
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        background-color: #0099ff;
+    }
+
+    .navbar img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .navbar-collapse .navbar-nav .nav-link {
+        font-size: 16px;
+        text-align: center;
+
+        color: rgb(1, 0, 0);
+
+        font-weight: 400;
+    }
+    .text-overlay {
+        margin-left: 0.5rem;
+    }
+
+    .header-image-container {
+        height: 32rem;
+    }
+    .header-image-container .text-overlay h1 {
+        font-size: 45px;
+
+        margin-top: 18rem;
+    }
+
+    .logo {
+        width: 6rem; /* Adjust width as per requirement */
+        height: 6rem;
+        margin: 2rem 2rem 0 2rem;
+    }
+    .carousel-inner {
+        margin-top: -15rem;
+    }
+
+    .navbar-collapse {
+        top: 1.5rem; /* adjust based on the height of your navbar */
+        background-color: #0099ff;
+    }
+    .container .row .img1 {
+        width: 100%;
+    }
+    .container .row .img2 {
+        display: none;
+    }
+    .container .row .par1 {
+        font-size: 18px;
+        margin-top: 50px;
+    }
+    .container .row .par2 {
+        font-size: 20px;
+        margin-top: 50px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .container .row .par3 {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-left: 0;
+        font-weight: 300;
+    }
+    .product .row .parag4 {
+        margin-top: 2rem;
+    }
+    .container .row .parag1 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .container .row .parag2 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .product {
+        padding: 100px;
+        margin-top: 0rem;
+        margin-bottom: 8rem;
+    }
+    .product img {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .column-content img {
+        width: 100%;
+    }
+    .product .row2 h2 {
+        font-size: 20px;
+        color: black;
+        font-weight: 400;
+        letter-spacing: 10px;
+    }
+
+    footer .contato h4 {
+        letter-spacing: 17px;
+        margin-bottom: 0px;
+        color: black;
+        font-weight: 400;
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    footer .icons {
+        margin-top: 20px;
+    }
+    .column-content p {
+        letter-spacing: 1px;
+    }
+}
